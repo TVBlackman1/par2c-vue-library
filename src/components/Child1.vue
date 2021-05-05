@@ -16,8 +16,8 @@
             this.p2cAddFunction(this.add)
         },
         methods: {
-            add() {
-                this.counter++
+            add(n = 1) {
+                this.counter += n
             }
         },
         mixins: [ChildMixin],

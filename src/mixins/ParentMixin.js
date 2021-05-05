@@ -6,8 +6,12 @@ export default {
             }
             this[groupName].push(func)
         },
-        p2cInvoke(groupName) {
-            this[groupName].forEach(func => func())
+        p2cInvoke(groupName, ...args) {
+            let ret = []
+            this[groupName].forEach(func => {
+                ret.push(func(...args))
+            })
+            return ret
         },
     },
     provide() {

@@ -24,7 +24,7 @@
         },
         methods: {
             handleClick() {
-                this.p2cInvoke('child1Name')
+                this.p2cInvoke('child1Name', 4)
                 this.p2cInvoke('child2Name')
             }
         },
