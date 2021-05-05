@@ -14,6 +14,9 @@
         },
         created() {
             this.p2cAddFunction(this.add)
+            this.p2cAddFunction(this.add)
+            this.p2cAddFunction(this.add)
+            this.p2cAddFunction(this.add)
         },
         methods: {
             add(n = 1) {

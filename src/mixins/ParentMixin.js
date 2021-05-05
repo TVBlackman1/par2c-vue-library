@@ -5,6 +5,7 @@ export default {
                 this[groupName] = []
             }
             this[groupName].push(func)
+            return this[groupName].length - 1 // index of function in array
         },
         p2cInvoke(groupName, ...args) {
             let ret = []
